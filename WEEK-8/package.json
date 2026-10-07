@@ -1,0 +1,12 @@
+{
+  "name": "carequeue-hms",
+  "version": "1.0.0",
+  "description": "CareQueue Hospital Management System - mini web app with Node.js, Express.js, and JSON as database",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

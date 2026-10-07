@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | CareQueue</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/" class="brand"><span class="plus">+</span> CareQueue</a>
+    <div class="nav-links">
+      <a href="#" id="logoutLink">Logout</a>
+    </div>
+  </nav>
+
+  <div class="dashboard-wrap">
+    <div class="welcome-bar">
+      <div>
+        <h1 id="welcomeName">Welcome back</h1>
+        <p>Here's your CareQueue patient overview.</p>
+      </div>
+      <button class="btn btn-danger" id="logoutBtn">Logout</button>
+    </div>
+
+    <div class="dash-grid">
+      <div class="card">
+        <h3>Patient Profile</h3>
+        <div class="info-row"><span class="label">Name</span><span class="value" id="pName">-</span></div>
+        <div class="info-row"><span class="label">Age</span><span class="value" id="pAge">-</span></div>
+        <div class="info-row"><span class="label">Gender</span><span class="value" id="pGender">-</span></div>
+        <div class="info-row"><span class="label">Email</span><span class="value" id="pEmail">-</span></div>
+        <div class="info-row"><span class="label">Mobile</span><span class="value" id="pMobile">-</span></div>
+        <div class="info-row"><span class="label">Blood Group</span><span class="value" id="pBlood">-</span></div>
+        <div class="info-row"><span class="label">Emergency Contact</span><span class="value" id="pEmergency">-</span></div>
+        <div class="info-row"><span class="label">Address</span><span class="value" id="pAddress">-</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Get a Queue Token</h3>
+        <p style="color: var(--muted); font-size: 14px;">Select a department and generate your live queue token.</p>
+        <div class="field">
+          <label for="deptSelect">Department</label>
+          <select id="deptSelect">
+            <option>General Medicine</option>
+            <option>Cardiology</option>
+            <option>Orthopedics</option>
+            <option>Pediatrics</option>
+            <option>Dermatology</option>
+            <option>ENT</option>
+          </select>
+        </div>
+        <button class="btn btn-primary btn-block" id="getTokenBtn">Generate Token</button>
+
+        <div class="token-display" id="tokenDisplay" style="display:none;">
+          <div class="token-number" id="tokenNumber">-</div>
+          <div class="token-dept" id="tokenDept">-</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>CareQueue Hospital Management System · Mini Web App Demo (Node.js + Express.js)</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

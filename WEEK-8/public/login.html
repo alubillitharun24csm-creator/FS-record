@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | CareQueue</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/" class="brand"><span class="plus">+</span> CareQueue</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/register">Register</a>
+      <a href="/login">Login</a>
+    </div>
+  </nav>
+
+  <div class="auth-wrapper">
+    <div class="auth-card" style="max-width: 420px;">
+      <h2>Patient Login</h2>
+      <p class="subtitle">Enter your credentials to access your dashboard.</p>
+
+      <div id="loginMessage" class="message"></div>
+
+      <form id="loginForm">
+        <div class="field">
+          <label for="identifier">Username or Email</label>
+          <input type="text" id="identifier" name="identifier" required />
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+      </form>
+
+      <p class="form-footer">New here? <a href="/register">Create an account</a></p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
